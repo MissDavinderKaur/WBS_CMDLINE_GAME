@@ -11,17 +11,10 @@ function startGame() {
     const userOption = process.argv.slice(2);
     if (validOptions.includes(userOption[0].toLowerCase())) {
         console.log(`You chose: ${userOption[0].toLowerCase()}`);
-        getComputerChoice();
+        const computerChoice = getComputerChoice();
     } else {
         console.log('Invalid choice. Please choose rock, paper, or scissors.');
     }
 }
 
-startGame();
-
-
-
-
-
-
-          
+startGame();     
